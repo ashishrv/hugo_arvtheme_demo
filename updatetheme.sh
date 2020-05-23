@@ -1,5 +1,7 @@
+#!/usr/local/bin/zsh
+
 LOCAL_DEMO_PATH=/Users/ashish/personal/workspace/experiment_hugo
 LOCAL_THEME_REPO=/Users/ashish/personal/workspace/hugo_arvtheme
-cp -r themes/arvtheme/* /
-cp -r /content/* /exampleSite/
-cp -r /archetypes/* /archetypess/
+cp -r ${LOCAL_DEMO_PATH}/themes/arvtheme/* ${LOCAL_THEME_REPO}/
+cp -r ${LOCAL_DEMO_PATH}/content/* ${LOCAL_THEME_REPO}/exampleSite/
+cp -r ${LOCAL_DEMO_PATH}/archetypes/* ${LOCAL_THEME_REPO}/archetypes/
