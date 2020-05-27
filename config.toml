@@ -1,4 +1,112 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "PiFunc"
 theme = "arvtheme"
+paginate = 4
+debug = 100000
+enableEmoji = true
+
+[params]
+    author = "Ashish R Vidyarthi"
+    #authorImage = "/images/arv.jpg"
+    showcardimage = false
+    showrelatedcardimage = false
+    showrelatedcontent = true
+    showcardlimit = 6
+    mainSections = ["blog", "docs"]
+
+
+    google_fonts = [
+        ["Fira Code", "400, 700"],
+        ["Prompt", "200, 200i"]
+    ]
+
+    heading_font = "Fira Code"
+    poetry_font = "Prompt"
+
+
+[[menu.main]]
+  name = "About"
+  weight = 10
+  url = "/about"
+
+[[menu.main]]
+  name = "Blog"
+  weight = 20
+  url = "/blog"
+
+[[menu.main]]
+    name = "Categories"
+    weight = 30
+    url = "/categories"
+
+[[menu.main]]
+    name = "Archive"
+    weight = 40
+    identifier = "archives"
+    url = "/blog/archive"
+
+[[menu.main]]
+   name = "Series"
+   weight = 50
+   identifier = "series"
+   url = "/series/"
+
+[[menu.main]]
+   name = "Tags"
+   weight = 50
+   identifier = "tags"
+   url = "/tags/"
+
+
+
+[[menu.social]]
+    name = "GitHub"
+    url = "https://github.com/ashishrv"
+    pre = "<i class='fab fa-github'></i>"
+
+
+[[menu.social]]
+    name = "Twitter"
+    url = "https://twitter.com/arvidyarthi"
+    pre = "<i class='fab fa-twitter'></i>"
+
+[[menu.social]]
+    name = "Stackoverflow"
+    url = "https://stackoverflow.com/users/432745/pyfunc"
+    pre = "<i class='fab fa-stack-overflow'></i>"
+
+[[menu.social]]
+    name = "RSS"
+    url = "/index.xml"
+    pre = "<i class='fa fa-rss'></i>"
+    weight = 10
+
+[[menu.footer]]
+  name = "About"
+  url = "/about"
+
+
+[related]
+    threshold = 0
+    includeNewer = true
+    toLower = false
+
+    [[related.indices]]
+        name = "categories"
+        weight = 100
+
+    [[related.indices]]
+        name = "date"
+        weight = 10
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
+[taxonomies]
+
+category = "categories"
+tag = "tags"
+series = "series"
