@@ -3,7 +3,7 @@
 // Import a Google Font
 //@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 //@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,500;1,200;1,500;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Spectral:ital,wght@0,200;0,300;0,500;1,200;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300;1,400&family=Literata:ital,wght@0,400;0,600;1,400;1,600&family=Redressed&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 // Set your brand colors
 $purple: #8A4D76;
 $pink: #FA7C91;
@@ -17,8 +17,11 @@ $beige-lighter: #EFF0EB;
 // $family-monospace: monospace;
 
 $family-serif: 'Spectral', serif;
+$family-sec-serif: 'Literata', serif;
+$family-sans-serif: 'Roboto', sans-serif;
+$family-monospace: 'DM Mono', monospace;
 $family-primary: $family-serif;
-$family-secondary: 'Roboto', sans-serif ;
+$family-secondary: $family-sec-serif;
 
 // Update Bulma's global variables
 //$family-sans-serif: "Nunito", sans-serif;
@@ -29,9 +32,9 @@ $family-secondary: 'Roboto', sans-serif ;
 
 
 
-// Update some of Bulma's component variables
-//$body-background-color: $beige-lighter;
-$control-border-width: 2px;
+// Update some of Bulma's component colors
+//$body-background-color: hsl(48, 100%, 67%);
+//$control-border-width: 2px;
 //$input-border-color: transparent;
 //$input-shadow: none;
 
